@@ -1,0 +1,22 @@
+### Register Customer
+POST http://localhost:8000/register
+Content-Type: application/json
+
+{
+  "first_name": "Sathvik",
+  "last_name": "Test",
+  "age": 25,
+  "monthly_income": 100000,
+  "phone_number": 9876543210
+}
+
+### Check Eligibility (paste the ID manually)
+POST http://localhost:8000/check-eligibility
+Content-Type: application/json
+
+{
+  "customer_id": 6,
+  "loan_amount": 200000,
+  "interest_rate": 12,
+  "tenure": 12
+}
